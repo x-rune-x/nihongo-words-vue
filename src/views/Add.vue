@@ -1,10 +1,10 @@
 <template>
 <h1>Add new word</h1>
   <form @submit.prevent="handleSubmit">
-    <input required type="text" placeholder="romaji" v-model="romaji">
-    <input required type="text" placeholder="hiragana" v-model="hiragana">
-    <input required type="text" placeholder="japanese" v-model="japanese">
-    <input required type="text" placeholder="english" v-model="english">
+    <input class="form" required type="text" placeholder="romaji" v-model="romaji">
+    <input class="form" required type="text" placeholder="hiragana" v-model="hiragana">
+    <input class="form" required type="text" placeholder="japanese" v-model="japanese">
+    <input class="form" required type="text" placeholder="english" v-model="english">
 
     <button>Add</button>
   </form>
@@ -51,24 +51,8 @@ export default {
 }
 </script>
 
-<style scoped>
-  form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 1px 2px 3px rgba(50,50,50,0.05);
-  border: 1px solid  var(--secondary);
-  background: white;
-}
-input {
-  border: 0;
-  border-bottom: 1px solid var(--secondary);
-  padding: 10px;
-  outline: none;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 20px auto;
-}
+<style scoped>  
+  button {
+    margin: 0;
+  }
 </style>
