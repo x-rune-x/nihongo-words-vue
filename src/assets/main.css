@@ -1,0 +1,41 @@
+/* custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Noto+Sans+JP:wght@300&display=swap');
+
+/* variables */
+:root {
+  --primary: #4f515a;
+  --secondary: #ebebeb;
+}
+
+/* base styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', sans-serif;
+  color: var(--primary);
+}
+.japanese {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: large;
+  font-weight: 600;
+}
+body {
+  background: #fafafa;
+}
+
+/* buttons */
+button, .btn { 
+  background: var(--secondary);
+  border-radius: 8px;
+  padding: 15px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid rgb(168, 168, 168);
+  margin: 0 20px;
+}
+button:hover, .btn:hover {
+  background: var(--primary);
+  color: rgb(206, 206, 206);
+  border: 2px solid black;
+}
